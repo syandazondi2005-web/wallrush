@@ -280,13 +280,13 @@ const App = {
     /* ---------- heritage ---------- */
     heritage(sc) {
       const H = WR_CONFIG.heritage;
-      const block = (tagCls, tagText, items, emptyHtml) => `<section class="card"><span class="tag ${tagCls}">${tagText}</span>
+      const block = (tagCls, tagText, items, emptyHtml) => `<section class="card">${tagText ? `<span class="tag ${tagCls}">${tagText}</span>` : ''}
         ${items.length ? items.map(i => `<h3>${esc(i.title)}</h3><p style="color:var(--ink-dim)">${esc(i.text)}${i.source ? `<br><small>Source: ${esc(i.source)}</small>` : ''}</p>`).join('') : emptyHtml}</section>`;
       sc.innerHTML = `${App.topbar()}<main class="page"><h2>About / History</h2><p class="lede">Indigenous games are not merely entertainment. They can carry knowledge, strategy, community values and cultural memory. This page keeps three kinds of statement clearly apart.</p>
         <div class="herit">
           ${block('doc', '✓ Documented history · needs verified sources', H.documented, '<div class="empty" style="margin-top:.8rem"><b>Needs verified sources.</b> No documented history has been supplied for Wall Rush yet, so none is shown. Nothing here has been written from memory or assumption. Verified entries added to the project will appear in this section together with their sources.</div>')}
           ${block('interp', '◇ Cultural interpretation', H.interpretation, '')}
-          ${block('sys', '▣ The Indigenous Games System', H.system, '')}
+          ${block('sys', '', H.system, '')}
         </div></main>`;
       App.wireNav(sc);
     },
