@@ -17,14 +17,10 @@ const WR_CONFIG = {
        Leave both empty to keep internet multiplayer disabled.
        url:     your project URL, e.g. 'https://abcdxyz.supabase.co'
        anonKey: the PUBLIC "anon" / "publishable" key. Never the service_role / secret key. */
-    supabase: { url: '', anonKey: '' }
+    supabase: { url: 'https://hdsaevkktnvhkoinkzcg.supabase.co', anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhkc2FldmtrdG52aGtvaW5remNnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA5NzI4MDUsImV4cCI6MjEwNjU0ODgwNX0.mn_cqpmy6bzLTOvMwjLwkfJeAxk3cnd-m2VTklfTxDI' }
   },
 
-  /* HERITAGE CONTENT
-     Only material supplied by the project may appear under "documented".
-     Current entries were supplied by the project owner and still need independent
-     citations; replace each `source` with a real citation when available.
-     Entry shape: { title, text, source } */
+  
   heritage: {
     documented: [
       { title: "Wall Rush as an arcade genre: overview",
