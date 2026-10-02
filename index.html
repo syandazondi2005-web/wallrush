@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night" data-motion="auto" data-contrast="normal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wall Rush — Indigenous Games System</title>
+<meta name="description" content="Wall Rush: a strategy game of paths and barriers. Traditional knowledge, redesigned for a new generation.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- Optional web fonts. If they cannot load, the game falls back to system fonts. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="bg" aria-hidden="true">
+  <svg class="skyline" viewBox="0 0 1200 190" preserveAspectRatio="none"><path d="M0 190V120h60v-30h50v30h40V70h70v40h50V90h60v40h40V60h80v50h50V85h60v35h70V50h60v60h50V95h70v30h40V75h70v45h60V100h50v90z"/></svg>
+</div>
+<div id="app"></div>
+<div id="toast" class="toast" role="status"></div>
+<div id="live" class="sr-only" aria-live="polite"></div>
+<noscript>Wall Rush needs JavaScript to run.</noscript>
+
+<!-- Classic scripts, loaded in dependency order. They share one global scope, exactly as in the original single-file build. No bundler needed. -->
+<script src="src/rules/engine.js"></script>
+<script src="src/ai/ai.js"></script>
+<script src="src/config.js"></script>
+<script src="src/core/core.js"></script>
+<script src="src/ui/board.js"></script>
+<script src="src/ui/controllers.js"></script>
+<script src="src/ui/lessons.js"></script>
+<script src="src/online/room.js"></script>
+<script src="src/online/supabase-transport.js"></script>
+<script src="src/ui/screens.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

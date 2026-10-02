@@ -1,0 +1,16 @@
+# dependencies and build output (not used today, ignored in case they appear later)
+node_modules/
+dist/
+
+# secrets: never commit these (the game needs none)
+.env
+.env.*
+!.env.example
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.log
+
+# screenshots written by the browser tests
+test-output/
