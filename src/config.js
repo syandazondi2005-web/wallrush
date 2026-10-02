@@ -43,8 +43,8 @@ const WR_CONFIG = {
       { title: 'More than entertainment', text: 'Indigenous games are not merely entertainment. They can carry knowledge, strategy, community values and cultural memory.' },
       { title: 'A reading of the design', text: 'Wall Rush asks players to think in boundaries and pathways: where a barrier closes one route, another must be found or made. This is how the game has been designed to be read, not a documented historical claim.' }
     ],
-    system: [
-      { title: 'Our aim', text: 'Traditional knowledge, redesigned for a new generation.' }
-    ]
+           system: [
+         { title: 'Our aim', text: 'Traditional knowledge, redesigned for a new generation.' }
+       ]
   }
 };
